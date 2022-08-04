@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import DisplayMusic from './Components/DisplayMusic/DisplayMusic';
 
 function App() {
 
@@ -17,7 +18,7 @@ function App() {
 
   return (
     <div>
-      <button onClick={() => getAllSongs()}>Get All Songs</button>
+      <DisplayMusic songs={songs} />
     </div>
   );
 }
