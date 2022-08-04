@@ -2,7 +2,6 @@
 const DisplayMusic = (props) => {
     return (
         <div>
-            <h3>My Song's List</h3>
             <table>
                 <thead>
                     <tr>
