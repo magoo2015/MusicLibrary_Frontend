@@ -1,8 +1,9 @@
+import './DisplayMusic.css';
 
 const DisplayMusic = (props) => {
     return (
-        <div>
-            <table>
+        <div className='displayMusic-container'>
+            <table className='music-table'>
                 <thead>
                     <tr>
                         <th>Title</th>

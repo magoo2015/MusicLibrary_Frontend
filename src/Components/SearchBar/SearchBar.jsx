@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchBar.css'
 
 const SearchBar = (props) => {
     const [find, setFind] = useState('')
@@ -24,7 +25,8 @@ const SearchBar = (props) => {
 
 return(
     <form onSubmit={searchMusic}>
-        <div>
+        <h4 className='title'>My Music Library</h4>
+        <div className='container-search'>
             <input type='text' value={find} onChange={(event) =>setFind(event.target.value)} />
             <button type='submit'>Filter Search</button>
         </div>

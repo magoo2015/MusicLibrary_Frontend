@@ -70,6 +70,9 @@ const CreateSong = (props) => {
                             <button type='submit' className='addnewsong-button'>Add New Song</button>
                         </div>
                     </div>
+                    <div>
+                    
+                    </div>
                 </form>
 
             </div>
