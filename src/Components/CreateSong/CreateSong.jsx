@@ -7,6 +7,7 @@ const CreateSong = (props) => {
     const [newAlbum, setAlbum] = useState('');
     const [newReleaseDate, setReleaseDate] = useState('');
     const [newGenre, setGenre] = useState('');
+    const [newLikes, setLikes] = useState('');
 
     function handleSubmit(event){
         event.preventDefault();
@@ -15,7 +16,9 @@ const CreateSong = (props) => {
             "artist": newArtist,
             "album": newAlbum,
             "release_date": newReleaseDate,
-            "genre": newGenre
+            "genre": newGenre,
+            "likes": newLikes,
+
         }
 
         props.addSong(newSong);
@@ -25,6 +28,7 @@ const CreateSong = (props) => {
         setAlbum("");
         setReleaseDate("");
         setGenre("");
+        setLikes("");
         
     }
 
@@ -37,23 +41,32 @@ const CreateSong = (props) => {
                     <div className='container-form'>
                         <div>
                             <label className='label-form'>Title:</label>
-                            <input type = 'text' value={newTitle} onChange={(event) => setTitle(event.target.value)}/>
+                            <input type = 'text' placeholder='Title' value={newTitle} onChange={(event) => setTitle(event.target.value)}/>
                         </div>
                         <div>
                             <label className='label-form'>Artist:</label>
-                            <input type = 'text' value={newArtist} onChange={(event) => setArtist(event.target.value)}/>
+                            <input type = 'text' placeholder='Artist' value={newArtist} onChange={(event) => setArtist(event.target.value)}/>
                         </div>
                         <div>
                             <label className='label-form'>Album:</label>
-                            <input type = 'text' value={newArtist} onChange={(event) => setAlbum(event.target.value)}/>
+                            <input type = 'text' placeholder='Album' value={newAlbum} onChange={(event) => setAlbum(event.target.value)}/>
                         </div>
                         <div>
                             <label className='label-form'>Release Date:</label>
-                            <input type = 'text' value={newArtist} onChange={(event) => setReleaseDate(event.target.value)}/>
+                            <input type = 'date' placeholder='Release_Date' value={newReleaseDate} onChange={(event) => setReleaseDate(event.target.value)}/>
                         </div>
                         <div>
                             <label className='label-form'>Genre:</label>
-                            <input type = 'text' value={newArtist} onChange={(event) => setGenre(event.target.value)}/>
+                            <input type = 'text' placeholder='Genre' value={newGenre} onChange={(event) => setGenre(event.target.value)}/>
+                        </div>
+                        <div>
+                            <label className='label-form'>Likes:</label>
+                            <input type = 'text' placeholder='Likes' value={newLikes} onChange={(event) => setLikes(event.target.value)}/>
+                        </div>
+                    </div>
+                    <div className='newsong-button'>
+                        <div>
+                            <button type='submit' className='addnewsong-button'>Add New Song</button>
                         </div>
                     </div>
                 </form>
