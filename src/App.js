@@ -3,6 +3,7 @@ import axios from 'axios';
 import DisplayMusic from './Components/DisplayMusic/DisplayMusic';
 import SearchBar from './Components/SearchBar/SearchBar';
 import CreateSong from './Components/CreateSong/CreateSong';
+import './App.css';
 
 function App() {
 
