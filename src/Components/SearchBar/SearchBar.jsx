@@ -25,7 +25,7 @@ const SearchBar = (props) => {
 
 return(
     <form onSubmit={searchMusic}>
-        <h4 className='title'>My Music Library</h4>
+        <h3 className='title'>My Music Library</h3>
         <div className='container-search'>
             <input type='text' value={find} onChange={(event) =>setFind(event.target.value)} />
             <button type='submit'>Filter Search</button>

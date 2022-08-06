@@ -1,4 +1,21 @@
+.new-song-section {
+    margin-top: 5%;
+}
+
+.new-song {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
 .container-form {
     display: flex;
     position: relative;
+    flex-direction: column;
+}
+
+.container-form label {
+    color: white;
+}
+
+.newsong-button button {
+    color: rgb(231, 88, 42); font-size: 13px; line-height: 13px; padding: 5px; border-radius: 8px; font-family: "Lucida Console", Monaco, monospace; font-weight: normal; text-decoration: none; font-style: normal; font-variant: normal; text-transform: none; background-image: linear-gradient(to right, rgb(28, 110, 164) 0%, rgb(35, 136, 203) 50%, rgb(20, 78, 117) 100%); box-shadow: rgb(0, 0, 0) 5px 5px 15px 5px; border: 2px solid rgb(28, 110, 164); display: inline-block;
 }

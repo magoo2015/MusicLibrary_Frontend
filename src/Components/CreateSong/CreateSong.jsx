@@ -35,7 +35,7 @@ const CreateSong = (props) => {
 
 
     return (
-        <div>
+        <div className='new-song-section'>
             <h3 className='new-song'>New Song</h3>
             <div className='new-song-container'>
                 <form onSubmit={handleSubmit}>

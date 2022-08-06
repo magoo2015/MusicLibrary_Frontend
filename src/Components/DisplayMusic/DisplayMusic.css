@@ -1,8 +1,19 @@
 .displayMusic-container {
-    text-align:right;
+    text-align:center;
+    width: 50% ;
+    color:floralwhite;
 }
 
 .music-table, th, td {
-    border: 2px solid;
-    padding: 1px;
+    border: 1px solid;
+    padding: auto;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
+
+
+
+
+
+

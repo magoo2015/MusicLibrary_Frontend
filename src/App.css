@@ -1,5 +1,6 @@
 body {
-    background-image: linear-gradient(to bottom, #f3eaea 75%, rgba(226, 18, 42, 0.895));
+    background-image: url("./Components/Images/4452495-music-wallpapers.jpg");
     width: 100%;
     background-size: cover;
+    background-blend-mode:hue;
 }
