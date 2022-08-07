@@ -62,12 +62,12 @@ const CreateSong = (props) => {
                         </div>
                         <div>
                             <label className='label-form'>Likes:</label>
-                            <input type = 'text' placeholder='Likes' value={newLikes} onChange={(event) => setLikes(event.target.value)}/>
+                            <input type = 'text' placeholder='Likes' value={newLikes} onChange={(event) => setLikes(event.target.value)}/><button type='submit' className='addnewsong-button'>Add New Song</button>
                         </div>
                     </div>
                     <div className='newsong-button'>
                         <div>
-                            <button type='submit' className='addnewsong-button'>Add New Song</button>
+                            
                         </div>
                     </div>
                     <div>
